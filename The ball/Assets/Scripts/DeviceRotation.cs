@@ -1,7 +1,18 @@
 using UnityEngine;
 
-public static class DeviceRotation
+
+public class InputGyroExample : MonoBehaviour
 {
+    Gyroscope m_Gyro;
+
+    void Start()
+    {
+        //Set up and enable the gyroscope
+        m_Gyro = Input.gyro;
+        m_Gyro.enabled = true;
+
+    }
+
     private static bool gyroInitialized = false;
 
     public static bool HasGyroscope
@@ -38,4 +49,10 @@ public static class DeviceRotation
     {
         return new Quaternion(0.5f, 0.5f, -0.5f, 0.5f) * Input.gyro.attitude * new Quaternion(0, 0, 1, 0);
     }
+
 }
+    
+   
+
+
+    
