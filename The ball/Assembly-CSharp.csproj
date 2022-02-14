@@ -54,6 +54,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\DeviceRotation.cs" />
+    <Compile Include="Assets\InputGyro.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
